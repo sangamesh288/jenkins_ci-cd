@@ -1,11 +1,9 @@
 pipeline {
-	agent {
-		label 'build'
-	}
-	stages {
-			stage('Checkout-Stage') {
+	agent any 
+	  stages {
+		       stage('Checkout-Stage') {
 						steps {
-							git branch: 'main', credentialsId: 'github', url: 'https://github.com/sudheer76R/java-example.git'
+							git branch: 'main', credentialsId: 'github', url: 'https://github.com/sangamesh288/maven-java.git'
 						}
 			}
 
